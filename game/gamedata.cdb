@@ -1,0 +1,407 @@
+{
+	"sheets": [
+		{
+			"name": "levels",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "1",
+					"name": "title",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "type"
+				},
+				{
+					"typeStr": "8",
+					"name": "mapCoords"
+				},
+				{
+					"typeStr": "3",
+					"name": "steps"
+				},
+				{
+					"typeStr": "8",
+					"name": "items"
+				},
+				{
+					"typeStr": "4",
+					"name": "enemyToItemRatio"
+				},
+				{
+					"typeStr": "8",
+					"name": "enemies"
+				}
+			],
+			"lines": [
+				{
+					"id": "vale_forest",
+					"title": "Vale Forest",
+					"mapCoords": [
+						{
+							"x": 10,
+							"y": 10
+						}
+					],
+					"items": [
+						{
+							"item_id": "mushroom",
+							"ratio": 5
+						},
+						{
+							"item_id": "herb",
+							"ratio": 15
+						},
+						{
+							"item_id": "stick",
+							"ratio": 5
+						},
+						{
+							"item_id": "dagger",
+							"ratio": 3
+						},
+						{
+							"item_id": "amulet_holy",
+							"ratio": 1
+						}
+					],
+					"steps": 8,
+					"enemyToItemRatio": 5,
+					"enemies": [
+						{
+							"enemy_id": "mouse_small",
+							"ratio": 3
+						},
+						{
+							"enemy_id": "bug_small",
+							"ratio": 2
+						}
+					],
+					"type": "dungeon"
+				},
+				{
+					"id": "devils_bayou",
+					"title": "Devil's Bayou",
+					"mapCoords": [
+						{
+							"x": 15,
+							"y": 16
+						}
+					],
+					"steps": 10,
+					"items": [
+						{
+							"item_id": "mushroom",
+							"ratio": 1
+						},
+						{
+							"item_id": "stick",
+							"ratio": 2
+						}
+					],
+					"enemyToItemRatio": 6,
+					"enemies": [
+						{
+							"enemy_id": "bug_small",
+							"ratio": 0
+						}
+					],
+					"type": "dungeon"
+				},
+				{
+					"id": "cheboygan",
+					"title": "Cheboygan",
+					"mapCoords": [
+						{
+							"x": 12,
+							"y": 14
+						}
+					],
+					"steps": 0,
+					"items": [],
+					"enemyToItemRatio": 0,
+					"enemies": [],
+					"type": "town"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "levels@mapCoords",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "3",
+					"name": "x"
+				},
+				{
+					"typeStr": "3",
+					"name": "y"
+				}
+			]
+		},
+		{
+			"name": "items",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "title",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "description",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "value"
+				},
+				{
+					"typeStr": "5:gear,consumable,artifact,boost",
+					"name": "type"
+				},
+				{
+					"typeStr": "5:weapon,chest,head,feet,hands,ring,amulet",
+					"name": "equip_type",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "5:blade,club,axe,staff",
+					"name": "weapon_type",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "damage",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "defense",
+					"opt": true
+				},
+				{
+					"typeStr": "4",
+					"name": "weight",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "hp_restore",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "max_per_slot"
+				},
+				{
+					"typeStr": "1",
+					"name": "image_id",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "mushroom",
+					"title": "Mushroom",
+					"description": "A tasty mushroom picked from the forest floor",
+					"value": 2,
+					"type": 1,
+					"hp_restore": 5,
+					"max_per_slot": 30,
+					"image_id": "mushroom"
+				},
+				{
+					"id": "herb",
+					"title": "Herb",
+					"description": "Good for cooking",
+					"value": 1,
+					"type": 1,
+					"hp_restore": 2,
+					"max_per_slot": 30,
+					"image_id": "herb"
+				},
+				{
+					"id": "stick",
+					"title": "Branch",
+					"description": "Sturdy tree branch",
+					"value": 0,
+					"type": 0,
+					"max_per_slot": 3,
+					"image_id": "stick",
+					"damage": 2,
+					"weight": 1,
+					"weapon_type": 3,
+					"equip_type": 0
+				},
+				{
+					"id": "amulet_holy",
+					"title": "Holy Amulet",
+					"description": "Nice peice of God-bling",
+					"value": 14,
+					"max_per_slot": 1,
+					"image_id": "amulet_god_bling",
+					"type": 0,
+					"equip_type": 6
+				},
+				{
+					"id": "dagger",
+					"title": "Rusty Dagger",
+					"description": "Might be nice for opening letters",
+					"value": 8,
+					"type": 0,
+					"max_per_slot": 1,
+					"image_id": "dagger",
+					"damage": 5,
+					"weight": 0.5,
+					"weapon_type": 0,
+					"equip_type": 0
+				},
+				{
+					"id": "shirt_worn",
+					"title": "Worn shirt",
+					"description": "Worn but comfortable, this shirt provides partial protection from mosquitos",
+					"value": 2,
+					"max_per_slot": 1,
+					"image_id": "shirt_green",
+					"defense": 1,
+					"weight": 0.3,
+					"type": 0,
+					"equip_type": 1
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "enemies",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "title",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "damage"
+				},
+				{
+					"typeStr": "3",
+					"name": "hp"
+				},
+				{
+					"typeStr": "1",
+					"name": "image_id"
+				}
+			],
+			"lines": [
+				{
+					"id": "mouse_small",
+					"title": "Small Mouse",
+					"damage": 1,
+					"hp": 8,
+					"image_id": "mouse_small2"
+				},
+				{
+					"id": "bug_small",
+					"title": "Small Bug",
+					"damage": 1,
+					"hp": 12,
+					"image_id": "bug"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "levels@items",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:items",
+					"name": "item_id",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "ratio"
+				}
+			]
+		},
+		{
+			"name": "levels@enemies",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:enemies",
+					"name": "enemy_id",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "ratio"
+				}
+			]
+		}
+	],
+	"customTypes": [
+		{
+			"name": "_coords",
+			"cases": [
+				{
+					"name": "Array",
+					"args": [
+						{
+							"name": "type",
+							"typeStr": "3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "item_ref",
+			"cases": [
+				{
+					"name": "items",
+					"args": [
+						{
+							"name": "m",
+							"typeStr": "6:items",
+							"opt": true
+						}
+					]
+				}
+			]
+		}
+	]
+}
